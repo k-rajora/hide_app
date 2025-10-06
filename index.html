@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felidae and Canidae Family Overview</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0e4276;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="min-h-screen p-4 md:p-10">
+        <!-- Header -->
+        <header class="text-center py-6 mb-8 bg-white shadow-lg rounded-xl">
+            <h1 class="text-4xl font-extrabold text-indigo-800 tracking-tight">Cat and Dog Families</h1>
+            <p class="mt-2 text-xl text-gray-600">A Simple Overview of Felidae and Canidae</p>
+        </header>
+
+        <main class="max-w-6xl mx-auto space-y-10">
+            <p class="text-lg text-gray-700 text-center">
+                Cats and dogs belong to the order <strong class="text-indigo-600">Carnivora</strong>, but they are split into two distinct and fascinating families: <strong class="text-red-500">Felidae</strong> (the cats) and <strong class="text-blue-500">Canidae</strong> (the dogs).
+            </p>
+
+            <!-- Family Cards Section (Responsive Grid) -->
+            <section class="grid md:grid-cols-2 gap-8">
+
+                <!-- 1. The Cat Family (Felidae) Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-red-500">
+                    <h2 class="text-3xl font-bold text-red-500 mb-4 flex items-center">
+                        <span class="mr-3 text-4xl">🐾</span> The Cat Family (Felidae)
+                    </h2>
+                    <p class="text-gray-600 mb-5">The Felidae family includes all cat species, from the largest lions and tigers to the smallest domestic house cats.</p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Characteristics:</h3>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                        <li>**Solitary Hunters (Mostly):** Most species (excluding lions) prefer to hunt and live alone.</li>
+                        <li>**Retractable Claws:** Most cats possess claws that they can retract into their paws, keeping them sharp and quiet for stalking.</li>
+                        <li>**Specialized Hunters:** They have short muzzles, strong jaws, and teeth built for slicing meat.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">Famous Members:</h3>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                        <li>*Panthera leo* (Lion)</li>
+                        <li>*Panthera tigris* (Tiger)</li>
+                        <li>*Felis catus* (Domestic Cat)</li>
+                    </ul>
+                </div>
+
+                <!-- 2. The Dog Family (Canidae) Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-500">
+                    <h2 class="text-3xl font-bold text-blue-500 mb-4 flex items-center">
+                        <span class="mr-3 text-4xl">🐶</span> The Dog Family (Canidae)
+                    </h2>
+                    <p class="text-gray-600 mb-5">The Canidae family includes dogs, wolves, foxes, coyotes, and jackals. They are generally known for their endurance and social behavior.</p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Characteristics:</h3>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                        <li>**Social Structure:** Many species, particularly wolves and domestic dogs, live and hunt in highly organized social groups (packs).</li>
+                        <li>**Non-Retractable Claws:** Their claws are generally non-retractable and are used for traction when running.</li>
+                        <li>**Endurance Runners:** They have long legs and lean bodies built for chasing prey over long distances.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">Famous Members:</h3>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                        <li>*Canis lupus* (Grey Wolf)</li>
+                        <li>*Canis latrans* (Coyote)</li>
+                        <li>*Canis familiaris* (Domestic Dog)</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Comparison Table -->
+            <section class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-indigo-600">
+                <h2 class="text-3xl font-bold text-indigo-800 mb-6 text-center">Comparison Summary</h2>
+
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-indigo-50">
+                            <tr>
+                                <th class="px-4 py-3 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">Feature</th>
+                                <th class="px-4 py-3 text-left text-sm font-medium text-red-500 uppercase tracking-wider">Felidae (Cats)</th>
+                                <th class="px-4 py-3 text-left text-sm font-medium text-blue-500 uppercase tracking-wider">Canidae (Dogs)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-100 text-gray-700">
+                            <tr>
+                                <td class="px-4 py-4 whitespace-nowrap font-medium text-gray-900">Hunting Style</td>
+                                <td class="px-4 py-4">Short burst of speed, pouncing, stealth</td>
+                                <td class="px-4 py-4">Endurance running, pack hunting</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 whitespace-nowrap font-medium text-gray-900">Claws</td>
+                                <td class="px-4 py-4">Mostly retractable</td>
+                                <td class="px-4 py-4">Non-retractable</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 whitespace-nowrap font-medium text-gray-900">Social Life</td>
+                                <td class="px-4 py-4">Largely solitary (except Lions)</td>
+                                <td class="px-4 py-4">Highly social (packs)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 whitespace-nowrap font-medium text-gray-900">Body Build</td>
+                                <td class="px-4 py-4">Flexible, muscular, short muzzle</td>
+                                <td class="px-4 py-4">Lean, long-legged, long muzzle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-10 pt-6 border-t border-gray-300 text-center text-gray-500 text-sm">
+            &copy; 2025 Zoology Overview. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
